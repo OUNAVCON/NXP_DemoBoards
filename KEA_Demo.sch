@@ -1,0 +1,197 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:NXP
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L S9KEAZN8AMTG U?
+U 1 1 59C8F397
+P 6850 2150
+F 0 "U?" H 7400 900 60  0000 C CNN
+F 1 "S9KEAZN8AMTG" H 7200 1950 60  0000 C CNN
+F 2 "" H 6850 2150 60  0001 C CNN
+F 3 "" H 6850 2150 60  0001 C CNN
+	1    6850 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L LM1117-3.3 U?
+U 1 1 59C8F406
+P 2100 1300
+F 0 "U?" H 2200 1050 50  0000 C CNN
+F 1 "LM1117-3.3" H 2100 1550 50  0000 C CNN
+F 2 "" H 2100 1300 50  0000 C CNN
+F 3 "" H 2100 1300 50  0000 C CNN
+	1    2100 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X02 P1
+U 1 1 59C8F44B
+P 1300 1350
+F 0 "P1" H 1300 1500 50  0000 C CNN
+F 1 "PWR" V 1400 1350 50  0000 C CNN
+F 2 "" H 1300 1350 50  0000 C CNN
+F 3 "" H 1300 1350 50  0000 C CNN
+	1    1300 1350
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	1500 1400 1500 1600
+Wire Wire Line
+	1500 1600 2100 1600
+$Comp
+L GND #PWR?
+U 1 1 59C8F4B0
+P 1800 1650
+F 0 "#PWR?" H 1800 1400 50  0001 C CNN
+F 1 "GND" H 1800 1500 50  0000 C CNN
+F 2 "" H 1800 1650 50  0000 C CNN
+F 3 "" H 1800 1650 50  0000 C CNN
+	1    1800 1650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1800 1650 1800 1600
+Connection ~ 1800 1600
+$Comp
+L +3.3V #PWR?
+U 1 1 59C8F500
+P 2500 1300
+F 0 "#PWR?" H 2500 1150 50  0001 C CNN
+F 1 "+3.3V" H 2500 1440 50  0000 C CNN
+F 2 "" H 2500 1300 50  0000 C CNN
+F 3 "" H 2500 1300 50  0000 C CNN
+	1    2500 1300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2400 1300 2500 1300
+$Comp
+L +3.3V #PWR?
+U 1 1 59C8F542
+P 6800 2250
+F 0 "#PWR?" H 6800 2100 50  0001 C CNN
+F 1 "+3.3V" H 6800 2390 50  0000 C CNN
+F 2 "" H 6800 2250 50  0000 C CNN
+F 3 "" H 6800 2250 50  0000 C CNN
+	1    6800 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 59C8F55C
+P 6950 3450
+F 0 "#PWR?" H 6950 3200 50  0001 C CNN
+F 1 "GND" H 6950 3300 50  0000 C CNN
+F 2 "" H 6950 3450 50  0000 C CNN
+F 3 "" H 6950 3450 50  0000 C CNN
+	1    6950 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6950 3350 6950 3450
+Wire Wire Line
+	6800 2250 6800 2350
+$Comp
+L C C?
+U 1 1 59C8F59C
+P 7100 2100
+F 0 "C?" H 7125 2200 50  0000 L CNN
+F 1 "0.1uF" H 7125 2000 50  0000 L CNN
+F 2 "" H 7138 1950 50  0000 C CNN
+F 3 "" H 7100 2100 50  0000 C CNN
+	1    7100 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 59C8F5E7
+P 7300 1950
+F 0 "#PWR?" H 7300 1700 50  0001 C CNN
+F 1 "GND" H 7300 1800 50  0000 C CNN
+F 2 "" H 7300 1950 50  0000 C CNN
+F 3 "" H 7300 1950 50  0000 C CNN
+	1    7300 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7100 1950 7300 1950
+Wire Wire Line
+	7100 2250 6800 2250
+$Comp
+L C C?
+U 1 1 59C8F649
+P 2450 1500
+F 0 "C?" H 2475 1600 50  0000 L CNN
+F 1 "0.1uF" H 2475 1400 50  0000 L CNN
+F 2 "" H 2488 1350 50  0000 C CNN
+F 3 "" H 2450 1500 50  0000 C CNN
+	1    2450 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 59C8F684
+P 1650 1450
+F 0 "C?" H 1675 1550 50  0000 L CNN
+F 1 "0.1uF" H 1675 1350 50  0000 L CNN
+F 2 "" H 1688 1300 50  0000 C CNN
+F 3 "" H 1650 1450 50  0000 C CNN
+	1    1650 1450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1500 1300 1800 1300
+Connection ~ 1650 1300
+Wire Wire Line
+	1800 1600 1650 1600
+Connection ~ 1650 1600
+Wire Wire Line
+	2450 1350 2450 1300
+Connection ~ 2450 1300
+Wire Wire Line
+	2450 1650 2100 1650
+Wire Wire Line
+	2100 1650 2100 1600
+$EndSCHEMATC
